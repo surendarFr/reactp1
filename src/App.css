@@ -48,6 +48,49 @@ button:hover {
 button:active {
   color: beige;
 }
+ul{
+  display: flex;
+}
 ul li{
   list-style-type: none;
+  display: flex;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;  /* Arrange items horizontally */
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+}
+
+.pagination li {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #2185d0;  /* Blue border */
+  border-radius: 4px;
+  color: #2185d0;
+  background: white;
+  text-align: center;
+}
+
+.pagination li a {
+  text-decoration: none; /* Remove any default link styling */
+  color: inherit;
+}
+
+.pagination .active {
+  background-color: #2185d0;  /* Blue background for active page */
+  color: white;
+  font-weight: bold;
 }
